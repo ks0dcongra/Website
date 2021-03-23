@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learning Javascript</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <!-- <button onclick="alert('您好')">點按我!</button> -->
+    <!-- <p>請猜一猜一個0到3之間的整數</p> -->
+    <!-- <input id="myInput" type="text" value=""/>
+    <button id="myButton">提交</button> -->
+    <!-- <p id="text">原來的一段文字</p> -->
+
+
+
+    <!-- <button id="myButton1">點按我!</button>
+    <p id="text1">我想添加</p>
+
+    <br><br>
+
+    <button id="myButton2">點按我!</button>
+    <p id="text2">我想添加</p> -->
+
+    <p id="arrayString"></p>
+    <p id="paragraph">22</p>
+    <script type="text/javascript">
+
+
+
+      // var x =5;
+      // console.log(x = Math.pow(x,3));
+
+
+
+
+      // var myArray = ["pizza", "chocalate"];
+      // myArray.push("apple");
+      // console.log(myArray);
+      //
+      // myArray.splice(1,0,"orange");
+      // console.log(myArray);
+
+      // var myVariable = document.getElementById("myInput").value;
+
+
+
+
+
+      // document.getElementById("myButton").onclick = function(){
+      //
+      //   document.getElementById('text').innerHTML = "修改後的文字";
+      // }
+
+      // document.getElementById("myButton1").onclick = function(){
+      //   alert("hi");
+      //   document.getElementById('text1').innerHTML = document.getElementById('text1').innerHTML + "一段文字";
+      // }
+      //
+      // document.getElementById("myButton2").onclick = function(){
+      //
+      //   document.getElementById('text2').innerHTML = "<ul><li>蘋果</li><li>香蕉</li><li>西瓜</li></ul>";
+      // }
+
+      // document.getElementById("myButton").onclick = function(){
+      //
+      //   myVariable = document.getElementById("myInput").value;
+      //   document.getElementById('text').innerHTML = myArray[1];
+      // }
+      var arrayString="";
+      var myArray = ["pizza", "chocolate","ice cream"];
+      var i=0;
+      while(i<myArray.length){
+
+        arrayString = arrayString+myArray[i]+" ";
+        i++;
+      }
+      document.getElementById('arrayString').innerHTML = arrayString;
+
+
+      function alertMe(a,b){
+
+         return (a+b);
+
+      }
+      document.getElementById('paragraph').innerHTML =  alertMe(6,3);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learning Javascript</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+
+    <p>請猜一猜一個0到3之間的整數</p>
+   <input id="myInput" type="text" value=""/>
+   <button id="myButton">提交</button>
+
+    <script type="text/javascript">
+
+      document.getElementById('myButton').onclick = function(){
+
+        var x = Math.random();
+
+        x=x*4 ;
+
+        x=Math.floor(x);
+
+        if(x == document.getElementById('myInput').value){
+
+          alert("恭喜，猜對了!");
+        }
+        else{
+
+          alert("您猜錯了,這個數字是" + x);
+        }
+      }
+    
+    </script>
+</body>
+</html>

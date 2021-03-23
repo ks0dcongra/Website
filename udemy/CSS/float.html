@@ -1,0 +1,138 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning CSS</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.box1 {
+
+      width:200px;
+      height: 200px;
+      background-color: tomato;
+
+      float: left;
+
+      transition: width 2s, height 2s, background-color 2s, font-size 2s, color 2s;
+      /* transition: width 2s ease-in-out 1s; */
+      /* transition-property: all;
+      transition-duration: 2s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 1s; */
+
+      /* padding: 5px;
+      border: 5px solid black;
+      margin:5px;
+
+      box-sizing: border-box; */
+
+    }
+
+    .box1:hover{
+
+      width: 600px;
+      height: 600px;
+      background-color:#92B901;
+      color:white;
+      font-size:50px;
+
+    }
+
+    .example {
+    display: grid;
+    transition: all .5s;
+    user-select: none;
+    background: linear-gradient(to bottom, white, black);
+}
+
+      @keyframes myAnimation{
+
+      /* from {width: 500px;}
+      to {width: 200px;} */
+      0%{
+        width:200px;
+        background-color:  orange;
+      }
+      50%{
+        width:500px;
+        background-color: tomato;
+      }
+      100%{
+        width:50px;
+        background-color:green;
+      }
+}
+
+    .box2{
+
+      width:200px;
+      height: 200px;
+      background-color: orange;
+      margin:auto;
+      float:left;
+      clear:left;
+      overflow: auto;
+      animation-name: myAnimation;
+      animation-duration: 8s;
+      animation-delay: -2s;
+      animation-iteration-count: infinite;
+      animation-direction: reverse;
+
+    }
+    .img-container{
+
+      width:33.33%;
+      float:left;
+      padding:5px;
+
+      box-sizing:border-box;
+
+      height: 200px;
+
+      overflow:hidden;
+    }
+
+    .clearFix{
+
+      clear: both;
+
+    }
+    </style>
+
+</head>
+
+<body>
+  <div>
+    <h1>Example Domain</h1>
+    <div class="box1">
+      <h1>Title1</h1>
+    </div>
+    <div class="box2">
+      <h1>Title2</h1>
+    </div>
+
+    <div class="clearFix">
+
+      <div class="img-container">
+        <img src="1.jpg" alt="First image" style="width:100%">
+      </div>
+      <div class="img-container">
+        <img src="2.jpg" alt="First image" style="width: 100%">
+      </div>
+      <div class="img-container">
+        <img src="3.jpg" alt="First image" style="width: 100%">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

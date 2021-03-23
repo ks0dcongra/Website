@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learning jQuery</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <style media="screen">
+      #circle{
+        width:200px;
+        height:200px;
+        background-color:#A7568B;
+        border-radius:50%;
+      }
+
+      .square{
+        width:200px;
+        height:200px;
+        background-color:pink;
+        margin-top:10px;
+      }
+
+    </style>
+</head>
+
+<body>
+
+  <div id="circle"></div>
+  <button id="b1">消 退</button>
+  <button id="b2">顯 示</button>
+
+
+  <script type="text/javascript">
+
+    $("#circle").click(function(){
+
+      $(this).animate({
+        width: "400px",
+        height: "500px",
+        marginLeft: "400px"
+
+      },1500);
+
+    });
+
+    $("#b1").click(function(){
+
+      $("#circle").fadeOut(1000,function(){
+
+        alert("消退動畫done!");
+
+      });
+
+    });
+
+    $("#b2").click(function(){
+
+      $("#circle").fadeIn();
+
+    });
+
+  </script>
+
+</body>
+</html>

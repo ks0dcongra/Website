@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learning Javascript</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style media="screen">
+      #circle{
+
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        background-color: red;
+      }
+    </style>
+</head>
+
+<body>
+    <div id="circle">
+      1
+    </div>
+    <script type="text/javascript">
+
+      var myVariable = 'circle';
+
+      document.getElementById('circle').onclick = function(){
+
+        document.getElementById(myVariable).style.display = "none";
+      }
+    </script>
+</body>
+</html>
